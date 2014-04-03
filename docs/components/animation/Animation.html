@@ -152,6 +152,9 @@
 								<a href="../../utility/output.html" class=" module">output</a>
 							</li>
 							<li>
+								<a href="../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -258,7 +261,15 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../components/animation/Animation.currentAnimation.html" class="public property"><code>currentAnimation</code></a>
+							<a href="../../components/animation/Animation.currBoneTransforms.html" class="public property"><code>currBoneTransforms</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Matrix!(float,4,4)[])</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation/Animation.currentAnim.html" class="public property"><code>currentAnim</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
 						<td><code class="prettyprint lang-d">shared(int)</code></td>
@@ -266,15 +277,7 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../components/animation/Animation.currentPose.html" class="public property"><code>currentPose</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">shared(<a href="../../components/animation/Animation.Bone.html">Animation.Bone</a>[])</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/animation/Animation.currentPosition.html" class="public property"><code>currentPosition</code></a>
+							<a href="../../components/animation/Animation.currentAnimTime.html" class="public property"><code>currentAnimTime</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
 						<td><code class="prettyprint lang-d">shared(float)</code></td>
@@ -299,7 +302,15 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../components/animation/Animation.currentAnimation.html" class="protected property"><code>currentAnimation</code></a>
+							<a href="../../components/animation/Animation.currBoneTransforms.html" class="protected property"><code>currBoneTransforms</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Matrix!(float,4,4)[])</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation/Animation.currentAnim.html" class="protected property"><code>currentAnim</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
 						<td><code class="prettyprint lang-d">shared(int)</code></td>
@@ -307,15 +318,7 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../components/animation/Animation.currentPose.html" class="protected property"><code>currentPose</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">shared(<a href="../../components/animation/Animation.Bone.html">Animation.Bone</a>[])</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/animation/Animation.currentPosition.html" class="protected property"><code>currentPosition</code></a>
+							<a href="../../components/animation/Animation.currentAnimTime.html" class="protected property"><code>currentAnimTime</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
 						<td><code class="prettyprint lang-d">shared(float)</code></td>
@@ -330,6 +333,14 @@
 					<tr>
 						<th>Name</th>
 						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation/Animation.getFrameTransforms.html" class="public">
+								<code>getFrameTransforms</code>
+							</a>
+						</td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>
@@ -348,24 +359,6 @@
 						</td>
 						<td> Function called on <code class="prettyprint lang-d">update</code>.
 </td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Inner classes</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/animation/Animation.Bone.html" class="public">
-								<code>Bone</code>
-							</a>
-						</td>
-						<td></td>
 					</tr>
 				</table>
 			</section>

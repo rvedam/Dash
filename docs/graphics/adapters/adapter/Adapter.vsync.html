@@ -152,6 +152,9 @@
 								<a href="../../../utility/output.html" class=" module">output</a>
 							</li>
 							<li>
+								<a href="../../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
 								<a href="../../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -193,7 +196,7 @@
 			<section>
 				<h3>Prototype</h3>
 				<pre class="code prettyprint lang-d prototype">
-bool vsync() @property auto final;</pre>
+bool vsync() pure nothrow @property @safe auto final;</pre>
 			</section>
 
 			<h2>Overload group</h2>
@@ -204,7 +207,7 @@ bool vsync() @property auto final;</pre>
 				<pre class="code prettyprint lang-d prototype">
 void vsync(
 &nbsp;&nbsp;bool newVal
-) @property final;</pre>
+) pure nothrow @property @safe final;</pre>
 			</section>
 
 			<section>

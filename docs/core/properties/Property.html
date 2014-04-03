@@ -152,6 +152,9 @@
 								<a href="../../utility/output.html" class=" module">output</a>
 							</li>
 							<li>
+								<a href="../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -187,7 +190,9 @@
 		</nav>
 		<div id="main-contents">
 			<h1>Variable Property</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
-			<p></p>
+			<p> Generates a getter and setter for a field.
+</p>
+<section></section>
 
 			<section>
 				<h2>Declaration</h2>
@@ -198,6 +203,15 @@ module <a href="../../core/properties.html">core.properties</a>;
 <code class="prettyprint lang-d">void</code> Property(alias field, core.properties.AccessModifier setterAccess, core.properties.AccessModifier getterAccess, string name);
 // ...</pre>
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
+<section><h2>Parameters</h2>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="field">field</td><td> 				The field to generate the property for.</td></tr>
+<tr><td id="setterAccess">setterAccess</td><td> 			The access modifier for the setter function.</td></tr>
+<tr><td id="getterAccess">getterAccess</td><td> 			The access modifier for the getter funciton.</td></tr>
+<tr><td id="name">name</td><td> 					The name of the property functions. Defaults to the field name minus the first character. Meant for fields that start with underscores.
+ </td></tr>
+</table>
+</section>
 <!-- Default block ddox.members in ddox.layout.dt-->
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->

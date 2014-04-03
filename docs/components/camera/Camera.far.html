@@ -152,6 +152,9 @@
 								<a href="../../utility/output.html" class=" module">output</a>
 							</li>
 							<li>
+								<a href="../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -193,7 +196,7 @@
 			<section>
 				<h3>Prototype</h3>
 				<pre class="code prettyprint lang-d prototype">
-shared(float) far() @property shared auto final;</pre>
+shared(float) far() pure nothrow @property @safe shared auto final;</pre>
 			</section>
 
 			<h2>Overload group</h2>
@@ -204,7 +207,7 @@ shared(float) far() @property shared auto final;</pre>
 				<pre class="code prettyprint lang-d prototype">
 void far(
 &nbsp;&nbsp;shared(float) newVal
-) @property shared final;</pre>
+) pure nothrow @property @safe shared final;</pre>
 			</section>
 
 			<section>

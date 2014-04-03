@@ -152,6 +152,9 @@
 								<a href="../../utility/output.html" class=" module">output</a>
 							</li>
 							<li>
+								<a href="../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -195,6 +198,9 @@
 					<li>
 						<code class="prettyprint lang-d"><code class="prettyprint lang-d">Object</code></code>
  (base class)
+					</li>
+					<li>
+						<code class="prettyprint lang-d"><code class="prettyprint lang-d"><a href="../../core/properties/IDirtyable.html">IDirtyable</a></code></code>
 					</li>
 				</ul>
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
@@ -260,6 +266,22 @@
 					</tr>
 					<tr>
 						<td>
+							<a href="../../core/gameobject/Transform.isDirty.html" class="public property"><code>isDirty</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">bool</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../core/gameobject/Transform.localMatrix.html" class="public property"><code>localMatrix</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Matrix!(float,4,4))</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
 							<a href="../../core/gameobject/Transform.matrix.html" class="public property"><code>matrix</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
@@ -300,6 +322,14 @@
 						<td> This returns the object's <a href="../../core/gameobject/Transform.rotation.html"><code class="prettyprint lang-d">rotation</code></a> relative to the world origin, not the parent
 </td>
 					</tr>
+					<tr>
+						<td>
+							<a href="../../core/properties/IDirtyable.isDirty.html" class="public inherited property"><code>isDirty</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">bool</code></td>
+						<td></td>
+					</tr>
 				</table>
 			</section>
 			<section>
@@ -318,24 +348,6 @@
 						</td>
 						<td> Rebuilds the object's <a href="../../core/gameobject/Transform.matrix.html"><code class="prettyprint lang-d">matrix</code></a>
 </td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Templates</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobject/Transform.Properties!().html" class="public">
-								<code>Properties!()</code>
-							</a>
-						</td>
-						<td></td>
 					</tr>
 				</table>
 			</section>

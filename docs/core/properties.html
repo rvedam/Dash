@@ -152,6 +152,9 @@
 								<a href="../utility/output.html" class=" module">output</a>
 							</li>
 							<li>
+								<a href="../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
 								<a href="../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -193,7 +196,7 @@
 <!-- using block ddox.sections in ddox.layout.dt-->
 			<section></section><!-- using block ddox.members in ddox.layout.dt-->
 			<section>
-				<h2>Functions</h2>
+				<h2>Interfaces</h2>
 				<table>
 					<col class="caption"/>
 					<tr>
@@ -202,11 +205,12 @@
 					</tr>
 					<tr>
 						<td>
-							<a id="setDirty" href="../core/properties/setDirty.html">
-								<code>setDirty</code>
+							<a id="IDirtyable" href="../core/properties/IDirtyable.html">
+								<code>IDirtyable</code>
 							</a>
 						</td>
-						<td></td>
+						<td> Requires implementation of the <a href="../core/properties/IDirtyable.isDirty.html"><code class="prettyprint lang-d">isDirty</code></a> property.
+</td>
 					</tr>
 				</table>
 			</section>
@@ -222,24 +226,6 @@
 						<td>
 							<a id="AccessModifier" href="../core/properties/AccessModifier.html">
 								<code>AccessModifier</code>
-							</a>
-						</td>
-						<td></td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Templates</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a id="DirtySetter" href="../core/properties/DirtySetter.html">
-								<code>DirtySetter</code>
 							</a>
 						</td>
 						<td></td>
@@ -264,7 +250,8 @@
 						<td>
 <code class="prettyprint lang-d">void</code>
 						</td>
-						<td></td>
+						<td> Generates a getter for a field that can be marked as dirty. Calls updateFunc if is dirty.
+</td>
 					</tr>
 					<tr>
 						<td>
@@ -275,18 +262,8 @@
 						<td>
 <code class="prettyprint lang-d">void</code>
 						</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a id="Properties" href="../core/properties/Properties.html">
-								<code>Properties</code>
-							</a>
-						</td>
-						<td>
-<code class="prettyprint lang-d">void</code>
-						</td>
-						<td></td>
+						<td> Generates a getter for a field.
+</td>
 					</tr>
 					<tr>
 						<td>
@@ -297,7 +274,8 @@
 						<td>
 <code class="prettyprint lang-d">void</code>
 						</td>
-						<td></td>
+						<td> Generates a getter and setter for a field.
+</td>
 					</tr>
 					<tr>
 						<td>
@@ -308,7 +286,20 @@
 						<td>
 <code class="prettyprint lang-d">void</code>
 						</td>
-						<td></td>
+						<td> Generates a setter for a field.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="ThisDirtyGetter" href="../core/properties/ThisDirtyGetter.html">
+								<code>ThisDirtyGetter</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d">void</code>
+						</td>
+						<td> Like <a href="../core/properties/DirtyGetter.html"><code class="prettyprint lang-d">DirtyGetter</code></a>, but instead of tracking if the field is dirty, it tracks if the this scope is dirty
+</td>
 					</tr>
 				</table>
 			</section>
