@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Class Input</title>
+		<title>Variable Input</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -39,6 +39,9 @@
 							</li>
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
+							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
 							</li>
 						</ul>
 							</li>
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -177,138 +186,19 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Class Input</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
+			<h1>Variable Input</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
 			<p></p>
 
 			<section>
-				<h2>Inherits from</h2>
-				<ul>
-					<li>
-						<code class="prettyprint lang-d"><code class="prettyprint lang-d">Object</code></code>
- (base class)
-					</li>
-				</ul>
+				<h2>Declaration</h2>
+				<pre class="code prettyprint lang-d prototype">
+module <a href="../../utility/input.html">utility.input</a>;
+
+// ...
+<code class="prettyprint lang-d">shared(<a href="../../utility/input/InputManager.html">InputManager</a>)</code> Input;
+// ...</pre>
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
-<!-- using block ddox.members in ddox.layout.dt-->
-			<section>
-				<h2>Methods</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.addKeyDownEvent.html" class="public">
-								<code>addKeyDownEvent</code>
-							</a>
-						</td>
-						<td> Add a key event only when the key is down.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.addKeyEvent.html" class="public">
-								<code>addKeyEvent</code>
-							</a>
-						</td>
-						<td> Add an event to be fired when the given key changes.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.addKeyUpEvent.html" class="public">
-								<code>addKeyUpEvent</code>
-							</a>
-						</td>
-						<td> Add a key event only when the key is up.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.getState.html" class="public">
-								<code>getState</code>
-							</a>
-						</td>
-						<td> Gets the state of a string-bound <a href="../../utility/input/Input.getState.html#input"><code class="prettyprint lang-d">input</code></a>.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.initialize.html" class="public">
-								<code>initialize</code>
-							</a>
-						</td>
-						<td> Processes Config/Input.yml and pulls input string bindings.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.isKeyDown.html" class="public">
-								<code>isKeyDown</code>
-							</a>
-						</td>
-						<td> Check if a given key is down.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.isKeyUp.html" class="public">
-								<code>isKeyUp</code>
-							</a>
-						</td>
-						<td> Check if a given key is up.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.setKeyState.html" class="public">
-								<code>setKeyState</code>
-							</a>
-						</td>
-						<td> Sets the state of the key to be assigned at the beginning of next frame.
- Should only be called from a window controller.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.update.html" class="public">
-								<code>update</code>
-							</a>
-						</td>
-						<td> Updates the key states, and calls all key events.
-</td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Aliases</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.KeyEvent.html" class="public">
-								<code>KeyEvent</code>
-							</a>
-						</td>
-						<td> Function called when key event triggers.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/input/Input.KeyStateEvent.html" class="public">
-								<code>KeyStateEvent</code>
-							</a>
-						</td>
-						<td></td>
-					</tr>
-				</table>
-			</section>
+<!-- Default block ddox.members in ddox.layout.dt-->
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->
 

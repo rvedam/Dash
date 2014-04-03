@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -184,7 +193,7 @@
 			<section>
 				<h3>Prototype</h3>
 				<pre class="code prettyprint lang-d prototype">
-<a href="../../components/material/Texture.html">Texture</a> normal() @property auto final;</pre>
+shared(<a href="../../components/material/Texture.html">Texture</a>) normal() @property shared auto final;</pre>
 			</section>
 
 			<h2>Overload group</h2>
@@ -194,8 +203,8 @@
 				<h3>Prototype</h3>
 				<pre class="code prettyprint lang-d prototype">
 void normal(
-&nbsp;&nbsp;<a href="../../components/material/Texture.html">Texture</a> newVal
-) @property final;</pre>
+&nbsp;&nbsp;shared(<a href="../../components/material/Texture.html">Texture</a>) newVal
+) @property shared final;</pre>
 			</section>
 
 			<section>

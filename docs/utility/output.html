@@ -40,6 +40,9 @@
 							<li>
 								<a href="../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../utility/config.html" class=" module">config</a>
 							</li>
@@ -185,6 +194,25 @@
 <!-- using block ddox.sections in ddox.layout.dt-->
 			<section></section><!-- using block ddox.members in ddox.layout.dt-->
 			<section>
+				<h2>Functions</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="log" href="../utility/output/log.html">
+								<code>log</code>
+							</a>
+						</td>
+						<td> Alias for Output.printMessage
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
 				<h2>Classes</h2>
 				<table>
 					<col class="caption"/>
@@ -194,8 +222,8 @@
 					</tr>
 					<tr>
 						<td>
-							<a id="Output" href="../utility/output/Output.html">
-								<code>Output</code>
+							<a id="OutputManager" href="../utility/output/OutputManager.html">
+								<code>OutputManager</code>
 							</a>
 						</td>
 						<td> Static class for handling interactions with the console.
@@ -232,7 +260,7 @@
 				</table>
 			</section>
 			<section>
-				<h2>Aliases</h2>
+				<h2>Global variables</h2>
 				<table>
 					<col class="caption"/>
 					<tr>
@@ -242,14 +270,25 @@
 					</tr>
 					<tr>
 						<td>
-							<a id="log" href="../utility/output/log.html">
-								<code>log</code>
+							<a id="Output" href="../utility/output/Output.html">
+								<code>Output</code>
 							</a>
 						</td>
 						<td>
+<code class="prettyprint lang-d">shared(<a href="../utility/output/OutputManager.html">OutputManager</a>)</code>
 						</td>
-						<td> Alias for Output.printMessage
-</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Aliases</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
 					</tr>
 					<tr>
 						<td>

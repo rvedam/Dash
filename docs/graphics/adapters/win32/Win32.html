@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../../utility/config.html" class=" module">config</a>
 							</li>
@@ -241,22 +250,6 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.far.html" class="public inherited property"><code>far</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.fov.html" class="public inherited property"><code>fov</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.fullscreen.html" class="public inherited property"><code>fullscreen</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
@@ -269,14 +262,6 @@
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
 						<td><code class="prettyprint lang-d">uint</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.near.html" class="public inherited property"><code>near</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -353,22 +338,6 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.far.html" class="protected inherited property"><code>far</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.fov.html" class="protected inherited property"><code>fov</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.fullscreen.html" class="protected inherited property"><code>fullscreen</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
@@ -381,14 +350,6 @@
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
 						<td><code class="prettyprint lang-d">uint</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.near.html" class="protected inherited property"><code>near</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -523,21 +484,29 @@
 					</tr>
 					<tr>
 						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.addObject.html" class="public inherited">
+								<code>addObject</code>
+							</a>
+						</td>
+						<td> Adds an <a href="../../../graphics/adapters/adapter/Adapter.addObject.html#object"><code class="prettyprint lang-d">object</code></a> to the scene
+ <a href="../../../graphics/adapters/adapter/Adapter.beginDraw.html"><code class="prettyprint lang-d">beginDraw</code></a> must be called before any calls of this function
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.addUI.html" class="public inherited">
+								<code>addUI</code>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.beginDraw.html" class="public inherited">
 								<code>beginDraw</code>
 							</a>
 						</td>
 						<td> sets up the rendering pipeline for the geometry pass
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.drawObject.html" class="public inherited">
-								<code>drawObject</code>
-							</a>
-						</td>
-						<td> draws an <a href="../../../graphics/adapters/adapter/Adapter.drawObject.html#object"><code class="prettyprint lang-d">object</code></a> for the geometry pass
- <a href="../../../graphics/adapters/adapter/Adapter.beginDraw.html"><code class="prettyprint lang-d">beginDraw</code></a> must be called before any calls of this function
 </td>
 					</tr>
 					<tr>
@@ -570,14 +539,6 @@
 						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.loadProperties.html" class="protected inherited">
 								<code>loadProperties</code>
-							</a>
-						</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.updateProjection.html" class="protected inherited">
-								<code>updateProjection</code>
 							</a>
 						</td>
 						<td></td>

@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class=" tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -225,7 +234,7 @@
 						<td>
 							<a href="../../core/gameobject/GameObject.name.html" class="public"><code>name</code></a>
 						</td>
-						<td><code class="prettyprint lang-d">string</code></td>
+						<td><code class="prettyprint lang-d">shared(string)</code></td>
 						<td></td>
 					</tr>
 				</table>
@@ -244,7 +253,7 @@
 							<a href="../../core/gameobject/GameObject.camera.html" class="public property"><code>camera</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/camera/Camera.html">Camera</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/camera/Camera.html">Camera</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -252,15 +261,7 @@
 							<a href="../../core/gameobject/GameObject.camera.html" class="public property"><code>camera</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/camera/Camera.html">Camera</a></code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobject/GameObject.children.html" class="public property"><code>children</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a>[]</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/camera/Camera.html">Camera</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -268,7 +269,15 @@
 							<a href="../../core/gameobject/GameObject.children.html" class="public property"><code>children</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a>[]</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>[])</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../core/gameobject/GameObject.children.html" class="public property"><code>children</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>[])</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -276,7 +285,7 @@
 							<a href="../../core/gameobject/GameObject.light.html" class="public property"><code>light</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/lights/Light.html">Light</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/lights/Light.html">Light</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -284,7 +293,7 @@
 							<a href="../../core/gameobject/GameObject.light.html" class="public property"><code>light</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/lights/Light.html">Light</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/lights/Light.html">Light</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -292,7 +301,7 @@
 							<a href="../../core/gameobject/GameObject.material.html" class="public property"><code>material</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Material.html">Material</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Material.html">Material</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -300,7 +309,7 @@
 							<a href="../../core/gameobject/GameObject.material.html" class="public property"><code>material</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Material.html">Material</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Material.html">Material</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -308,7 +317,7 @@
 							<a href="../../core/gameobject/GameObject.mesh.html" class="public property"><code>mesh</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/mesh/Mesh.html">Mesh</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/mesh/Mesh.html">Mesh</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -316,7 +325,7 @@
 							<a href="../../core/gameobject/GameObject.mesh.html" class="public property"><code>mesh</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/mesh/Mesh.html">Mesh</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/mesh/Mesh.html">Mesh</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -324,7 +333,7 @@
 							<a href="../../core/gameobject/GameObject.parent.html" class="public property"><code>parent</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -332,7 +341,7 @@
 							<a href="../../core/gameobject/GameObject.parent.html" class="public property"><code>parent</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -340,7 +349,7 @@
 							<a href="../../core/gameobject/GameObject.transform.html" class="public property"><code>transform</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/Transform.html">Transform</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/Transform.html">Transform</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -348,7 +357,7 @@
 							<a href="../../core/gameobject/GameObject.transform.html" class="public property"><code>transform</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/Transform.html">Transform</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/Transform.html">Transform</a>)</code></td>
 						<td></td>
 					</tr>
 				</table>
@@ -458,24 +467,6 @@
 						</td>
 						<td> Called once per frame to <code class="prettyprint lang-d">update</code> all components.
 </td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Templates</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobject/GameObject.Signal!(string, string).html" class="public">
-								<code>Signal!(string, string)</code>
-							</a>
-						</td>
-						<td></td>
 					</tr>
 				</table>
 			</section>

@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -207,16 +216,9 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../components/camera/Camera._viewMatrixIsDirty.html" class="public"><code>_viewMatrixIsDirty</code></a>
-						</td>
-						<td><code class="prettyprint lang-d">bool</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
 							<a href="../../components/icomponent/IComponent.initializers.html" class="public inherited"><code>initializers</code></a>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/icomponent/IComponent.html">IComponent</a> function(dyaml.node.Node, <a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/icomponent/IComponent.html">IComponent</a>) function(dyaml.node.Node, shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>))</code></td>
 						<td> Functions to call when creating components.
 </td>
 					</tr>
@@ -233,10 +235,66 @@
 					</tr>
 					<tr>
 						<td>
+							<a href="../../components/camera/Camera.far.html" class="public property"><code>far</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.far.html" class="public property"><code>far</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.fov.html" class="public property"><code>fov</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.fov.html" class="public property"><code>fov</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.near.html" class="public property"><code>near</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.near.html" class="public property"><code>near</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
 							<a href="../../components/camera/Camera.viewMatrix.html" class="public property"><code>viewMatrix</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Matrix!(float,4,4)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Matrix!(float,4,4))</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.viewMatrix.html" class="public property"><code>viewMatrix</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Matrix!(float,4,4))</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -244,7 +302,7 @@
 							<a href="../../components/icomponent/IComponent.owner.html" class="public inherited property"><code>owner</code></a>
 							<span class="tableEntryAnnotation">[get, set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td> The GameObject that owns this component.
 </td>
 					</tr>
@@ -257,6 +315,22 @@
 					<tr>
 						<th>Name</th>
 						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.buildOrthogonal.html" class="public">
+								<code>buildOrthogonal</code>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.buildPerspective.html" class="public">
+								<code>buildPerspective</code>
+							</a>
+						</td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>
@@ -275,6 +349,14 @@
 						</td>
 						<td> Function called on <code class="prettyprint lang-d">update</code>.
 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/camera/Camera.updateViewMatrix.html" class="public">
+								<code>updateViewMatrix</code>
+							</a>
+						</td>
+						<td></td>
 					</tr>
 				</table>
 			</section>

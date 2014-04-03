@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../../utility/config.html" class=" module">config</a>
 							</li>
@@ -217,22 +226,6 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.far.html" class="public property"><code>far</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.fov.html" class="public property"><code>fov</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.fullscreen.html" class="public property"><code>fullscreen</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
@@ -245,14 +238,6 @@
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
 						<td><code class="prettyprint lang-d">uint</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.near.html" class="public property"><code>near</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -313,22 +298,6 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.far.html" class="protected property"><code>far</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.fov.html" class="protected property"><code>fov</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.fullscreen.html" class="protected property"><code>fullscreen</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
@@ -341,14 +310,6 @@
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
 						<td><code class="prettyprint lang-d">uint</code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.near.html" class="protected property"><code>near</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -411,6 +372,24 @@
 					</tr>
 					<tr>
 						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.addObject.html" class="public">
+								<code>addObject</code>
+							</a>
+						</td>
+						<td> Adds an <a href="../../../graphics/adapters/adapter/Adapter.addObject.html#object"><code class="prettyprint lang-d">object</code></a> to the scene
+ <a href="../../../graphics/adapters/adapter/Adapter.beginDraw.html"><code class="prettyprint lang-d">beginDraw</code></a> must be called before any calls of this function
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.addUI.html" class="public">
+								<code>addUI</code>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.beginDraw.html" class="public">
 								<code>beginDraw</code>
 							</a>
@@ -425,16 +404,6 @@
 							</a>
 						</td>
 						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.drawObject.html" class="public">
-								<code>drawObject</code>
-							</a>
-						</td>
-						<td> draws an <a href="../../../graphics/adapters/adapter/Adapter.drawObject.html#object"><code class="prettyprint lang-d">object</code></a> for the geometry pass
- <a href="../../../graphics/adapters/adapter/Adapter.beginDraw.html"><code class="prettyprint lang-d">beginDraw</code></a> must be called before any calls of this function
-</td>
 					</tr>
 					<tr>
 						<td>
@@ -522,14 +491,6 @@
 						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.loadProperties.html" class="protected">
 								<code>loadProperties</code>
-							</a>
-						</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../../graphics/adapters/adapter/Adapter.updateProjection.html" class="protected">
-								<code>updateProjection</code>
 							</a>
 						</td>
 						<td></td>

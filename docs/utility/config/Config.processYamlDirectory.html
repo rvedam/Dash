@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class="selected module">config</a>
 							</li>
@@ -180,17 +189,25 @@
 			<h1>Method Config.processYamlDirectory</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
 			<p> Process all yaml files in a directory, and call the <a href="../../utility/config/Config.processYamlDirectory.html#callback"><code class="prettyprint lang-d">callback</code></a> with all the root level nodes.
 </p>
-<section>
-</section>
+<section></section>
 
 			<section>
 				<h2>Prototype</h2>
 				<pre class="code prettyprint lang-d prototype">
 void processYamlDirectory(
 &nbsp;&nbsp;string folder,
-&nbsp;&nbsp;void delegate(dyaml.node.Node) callback
+&nbsp;&nbsp;void delegate(dyaml.node.Node) callback,
+&nbsp;&nbsp;bool concurrent
 ) static final;</pre>
 			</section>
+<section><h2>Parameters</h2>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="folder">folder</td><td>				The <a href="../../utility/config/Config.processYamlDirectory.html#folder"><code class="prettyprint lang-d">folder</code></a> to iterate over.</td></tr>
+<tr><td id="callback">callback</td><td>				The function to call on each root level object.</td></tr>
+<tr><td id="concurrent">concurrent</td><td>			Whether or not to run operation in parallel.
+	 </td></tr>
+</table>
+</section>
 
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->

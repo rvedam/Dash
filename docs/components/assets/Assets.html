@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Class Assets</title>
+		<title>Variable Assets</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -39,6 +39,9 @@
 							</li>
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
+							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
 							</li>
 						</ul>
 							</li>
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -177,59 +186,19 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Class Assets</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
-			<p> <code class="prettyprint lang-d">Assets</code> manages all assets that aren't code, GameObjects, or Prefabs.
-</p>
-<section>
-</section>
+			<h1>Variable Assets</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
+			<p></p>
 
 			<section>
-				<h2>Inherits from</h2>
-				<ul>
-					<li>
-						<code class="prettyprint lang-d"><code class="prettyprint lang-d">Object</code></code>
- (base class)
-					</li>
-				</ul>
+				<h2>Declaration</h2>
+				<pre class="code prettyprint lang-d prototype">
+module <a href="../../components/assets.html">components.assets</a>;
+
+// ...
+<code class="prettyprint lang-d">shared(<a href="../../components/assets/AssetManager.html">AssetManager</a>)</code> Assets;
+// ...</pre>
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
-<!-- using block ddox.members in ddox.layout.dt-->
-			<section>
-				<h2>Methods</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/assets/Assets.get.html" class="public">
-								<code>get</code>
-							</a>
-						</td>
-						<td> Get the asset with the given type and <a href="../../components/assets/Assets.get.html#name"><code class="prettyprint lang-d">name</code></a>.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/assets/Assets.initialize.html" class="public">
-								<code>initialize</code>
-							</a>
-						</td>
-						<td> Load all assets in the FilePath.ResourceHome folder.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/assets/Assets.shutdown.html" class="public">
-								<code>shutdown</code>
-							</a>
-						</td>
-						<td> Unload and destroy all stored assets.
-</td>
-					</tr>
-				</table>
-			</section>
+<!-- Default block ddox.members in ddox.layout.dt-->
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->
 

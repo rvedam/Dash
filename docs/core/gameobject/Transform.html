@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class=" tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -221,21 +230,21 @@
 						<td>
 							<a href="../../core/gameobject/Transform.position.html" class="public"><code>position</code></a>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Vector!(float,3)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Vector!(float,3))</code></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
 							<a href="../../core/gameobject/Transform.rotation.html" class="public"><code>rotation</code></a>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Quaternion!(float)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Quaternion!(float))</code></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
 							<a href="../../core/gameobject/Transform.scale.html" class="public"><code>scale</code></a>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Vector!(float,3)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Vector!(float,3))</code></td>
 						<td></td>
 					</tr>
 				</table>
@@ -254,7 +263,7 @@
 							<a href="../../core/gameobject/Transform.matrix.html" class="public property"><code>matrix</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Matrix!(float,4,4)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Matrix!(float,4,4))</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -262,7 +271,7 @@
 							<a href="../../core/gameobject/Transform.owner.html" class="public property"><code>owner</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -270,7 +279,7 @@
 							<a href="../../core/gameobject/Transform.owner.html" class="public property"><code>owner</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -278,7 +287,7 @@
 							<a href="../../core/gameobject/Transform.worldPosition.html" class="public property"><code>worldPosition</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Vector!(float,3)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Vector!(float,3))</code></td>
 						<td> This returns the object's <a href="../../core/gameobject/Transform.position.html"><code class="prettyprint lang-d">position</code></a> relative to the world origin, not the parent
 </td>
 					</tr>
@@ -287,7 +296,7 @@
 							<a href="../../core/gameobject/Transform.worldRotation.html" class="public property"><code>worldRotation</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Quaternion!(float)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Quaternion!(float))</code></td>
 						<td> This returns the object's <a href="../../core/gameobject/Transform.rotation.html"><code class="prettyprint lang-d">rotation</code></a> relative to the world origin, not the parent
 </td>
 					</tr>
@@ -324,14 +333,6 @@
 						<td>
 							<a href="../../core/gameobject/Transform.Properties!().html" class="public">
 								<code>Properties!()</code>
-							</a>
-						</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobject/Transform.Signal!(string, string).html" class="public">
-								<code>Signal!(string, string)</code>
 							</a>
 						</td>
 						<td></td>

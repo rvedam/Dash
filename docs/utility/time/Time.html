@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Class Time</title>
+		<title>Variable Time</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -39,6 +39,9 @@
 							</li>
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
+							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
 							</li>
 						</ul>
 							</li>
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -177,70 +186,19 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Class Time</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
-			<p> Manages time and delta time.
-</p>
-<section>
-</section>
+			<h1>Variable Time</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
+			<p></p>
 
 			<section>
-				<h2>Inherits from</h2>
-				<ul>
-					<li>
-						<code class="prettyprint lang-d"><code class="prettyprint lang-d">Object</code></code>
- (base class)
-					</li>
-				</ul>
+				<h2>Declaration</h2>
+				<pre class="code prettyprint lang-d prototype">
+module <a href="../../utility/time.html">utility.time</a>;
+
+// ...
+<code class="prettyprint lang-d">shared(<a href="../../utility/time/TimeManager.html">TimeManager</a>)</code> Time;
+// ...</pre>
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
-<!-- using block ddox.members in ddox.layout.dt-->
-			<section>
-				<h2>Properties</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/time/Time.deltaTime.html" class="public property"><code>deltaTime</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td> <a href="../../utility/time/Time.html"><code class="prettyprint lang-d">Time</code></a> since last frame, in seconds.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/time/Time.totalTime.html" class="public property"><code>totalTime</code></a>
-							<span class="tableEntryAnnotation">[get]</span>
-						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
-						<td> Total time spent running, in seconds.
-</td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Methods</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../utility/time/Time.update.html" class="public">
-								<code>update</code>
-							</a>
-						</td>
-						<td> Update the times. Only call once per frame!
-</td>
-					</tr>
-				</table>
-			</section>
+<!-- Default block ddox.members in ddox.layout.dt-->
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->
 

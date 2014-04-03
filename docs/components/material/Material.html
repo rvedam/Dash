@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -194,6 +203,24 @@
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
 <!-- using block ddox.members in ddox.layout.dt-->
 			<section>
+				<h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/material/Material.this.html" class="public">
+								<code>this</code>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section>
 				<h2>Fields</h2>
 				<table>
 					<col class="caption"/>
@@ -206,7 +233,7 @@
 						<td>
 							<a href="../../components/icomponent/IComponent.initializers.html" class="public inherited"><code>initializers</code></a>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/icomponent/IComponent.html">IComponent</a> function(dyaml.node.Node, <a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/icomponent/IComponent.html">IComponent</a>) function(dyaml.node.Node, shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>))</code></td>
 						<td> Functions to call when creating components.
 </td>
 					</tr>
@@ -226,7 +253,15 @@
 							<a href="../../components/material/Material.diffuse.html" class="public property"><code>diffuse</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Texture.html">Texture</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Texture.html">Texture</a>)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/material/Material.diffuse.html" class="public property"><code>diffuse</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Texture.html">Texture</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -234,7 +269,15 @@
 							<a href="../../components/material/Material.normal.html" class="public property"><code>normal</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Texture.html">Texture</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Texture.html">Texture</a>)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/material/Material.normal.html" class="public property"><code>normal</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Texture.html">Texture</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -242,7 +285,15 @@
 							<a href="../../components/material/Material.specular.html" class="public property"><code>specular</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Texture.html">Texture</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Texture.html">Texture</a>)</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/material/Material.specular.html" class="public property"><code>specular</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/material/Texture.html">Texture</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -250,33 +301,9 @@
 							<a href="../../components/icomponent/IComponent.owner.html" class="public inherited property"><code>owner</code></a>
 							<span class="tableEntryAnnotation">[get, set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td> The GameObject that owns this component.
 </td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/material/Material.diffuse.html" class="protected property"><code>diffuse</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Texture.html">Texture</a></code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/material/Material.normal.html" class="protected property"><code>normal</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Texture.html">Texture</a></code></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../components/material/Material.specular.html" class="protected property"><code>specular</code></a>
-							<span class="tableEntryAnnotation">[set]</span>
-						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/material/Texture.html">Texture</a></code></td>
-						<td></td>
 					</tr>
 				</table>
 			</section>

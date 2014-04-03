@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -224,7 +233,7 @@
 						<td>
 							<a href="../../components/icomponent/IComponent.initializers.html" class="public inherited"><code>initializers</code></a>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/icomponent/IComponent.html">IComponent</a> function(dyaml.node.Node, <a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/icomponent/IComponent.html">IComponent</a>) function(dyaml.node.Node, shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>))</code></td>
 						<td> Functions to call when creating components.
 </td>
 					</tr>
@@ -244,7 +253,7 @@
 							<a href="../../components/lights/Light.color.html" class="public property"><code>color</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Vector!(float,3)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Vector!(float,3))</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -252,7 +261,7 @@
 							<a href="../../components/lights/Light.color.html" class="public property"><code>color</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d">gl3n.linalg.Vector!(float,3)</code></td>
+						<td><code class="prettyprint lang-d">shared(gl3n.linalg.Vector!(float,3))</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -260,7 +269,7 @@
 							<a href="../../components/icomponent/IComponent.owner.html" class="public inherited property"><code>owner</code></a>
 							<span class="tableEntryAnnotation">[get, set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td> The GameObject that owns this component.
 </td>
 					</tr>

@@ -40,6 +40,9 @@
 							<li>
 								<a href="../../components/mesh.html" class=" module">mesh</a>
 							</li>
+							<li>
+								<a href="../../components/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -106,6 +109,9 @@
 							<li>
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
+							<li>
+								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
+							</li>
 						</ul>
 							</li>
 							<li>
@@ -130,6 +136,9 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
+							<li>
+								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
+							</li>
 							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
@@ -224,7 +233,7 @@
 						<td>
 							<a href="../../components/icomponent/IComponent.initializers.html" class="public inherited"><code>initializers</code></a>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/icomponent/IComponent.html">IComponent</a> function(dyaml.node.Node, <a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/icomponent/IComponent.html">IComponent</a>) function(dyaml.node.Node, shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>))</code></td>
 						<td> Functions to call when creating components.
 </td>
 					</tr>
@@ -244,7 +253,7 @@
 							<a href="../../components/animation/Animation.animationData.html" class="public property"><code>animationData</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/assetanimation/AssetAnimation.html">AssetAnimation</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/assetanimation/AssetAnimation.html">AssetAnimation</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -252,7 +261,7 @@
 							<a href="../../components/animation/Animation.currentAnimation.html" class="public property"><code>currentAnimation</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">int</code></td>
+						<td><code class="prettyprint lang-d">shared(int)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -260,7 +269,7 @@
 							<a href="../../components/animation/Animation.currentPose.html" class="public property"><code>currentPose</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/animation/Animation.Bone.html">Animation.Bone</a>[]</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/animation/Animation.Bone.html">Animation.Bone</a>[])</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -268,7 +277,7 @@
 							<a href="../../components/animation/Animation.currentPosition.html" class="public property"><code>currentPosition</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -276,7 +285,7 @@
 							<a href="../../components/icomponent/IComponent.owner.html" class="public inherited property"><code>owner</code></a>
 							<span class="tableEntryAnnotation">[get, set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../core/gameobject/GameObject.html">GameObject</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>)</code></td>
 						<td> The GameObject that owns this component.
 </td>
 					</tr>
@@ -285,7 +294,7 @@
 							<a href="../../components/animation/Animation.animationData.html" class="protected property"><code>animationData</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/assetanimation/AssetAnimation.html">AssetAnimation</a></code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/assetanimation/AssetAnimation.html">AssetAnimation</a>)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -293,7 +302,7 @@
 							<a href="../../components/animation/Animation.currentAnimation.html" class="protected property"><code>currentAnimation</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d">int</code></td>
+						<td><code class="prettyprint lang-d">shared(int)</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -301,7 +310,7 @@
 							<a href="../../components/animation/Animation.currentPose.html" class="protected property"><code>currentPose</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d"><a href="../../components/animation/Animation.Bone.html">Animation.Bone</a>[]</code></td>
+						<td><code class="prettyprint lang-d">shared(<a href="../../components/animation/Animation.Bone.html">Animation.Bone</a>[])</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -309,7 +318,7 @@
 							<a href="../../components/animation/Animation.currentPosition.html" class="protected property"><code>currentPosition</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
-						<td><code class="prettyprint lang-d">float</code></td>
+						<td><code class="prettyprint lang-d">shared(float)</code></td>
 						<td></td>
 					</tr>
 				</table>
