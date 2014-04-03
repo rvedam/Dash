@@ -66,6 +66,9 @@
 							<li>
 								<a href="../../core/reflection.html" class=" module">reflection</a>
 							</li>
+							<li>
+								<a href="../../core/scene.html" class=" module">scene</a>
+							</li>
 						</ul>
 							</li>
 							<li class="collapsed tree-view">
@@ -193,24 +196,24 @@
 			<p> Query the on-disk history database.
 </p>
 <section>
-<p> @param	<a href="../../utility/awesomium/awe_webcore_query_history.html#full_text_query"><code class="prettyprint lang-d">full_text_query</code></a>	All results returned should match the
+<p> @param   <a href="../../utility/awesomium/awe_webcore_query_history.html#full_text_query"><code class="prettyprint lang-d">full_text_query</code></a> All results returned should match the
                           specified text (either in the page title or
                           in the actual text of the page itself).
                           Specify an empty string to match anything.
 </p>
 
-<p> @param	<a href="../../utility/awesomium/awe_webcore_query_history.html#num_days_ago"><code class="prettyprint lang-d">num_days_ago</code></a>	Limit results to a specified number of days ago.
+<p> @param   <a href="../../utility/awesomium/awe_webcore_query_history.html#num_days_ago"><code class="prettyprint lang-d">num_days_ago</code></a>    Limit results to a specified number of days ago.
 </p>
 
-<p> @param	<a href="../../utility/awesomium/awe_webcore_query_history.html#max_count"><code class="prettyprint lang-d">max_count</code></a>	Limit results to a maximum count. Specify 0 to
+<p> @param   <a href="../../utility/awesomium/awe_webcore_query_history.html#max_count"><code class="prettyprint lang-d">max_count</code></a>   Limit results to a maximum count. Specify 0 to
                       use no limit.
 </p>
 
-<p> @note	You must enable "SaveCacheAndCookies" (see <a href="../../utility/awesomium/awe_webcore_initialize.html"><code class="prettyprint lang-d">awe_webcore_initialize</code></a>) for
+<p> @note    You must enable "SaveCacheAndCookies" (see <a href="../../utility/awesomium/awe_webcore_initialize.html"><code class="prettyprint lang-d">awe_webcore_initialize</code></a>) for
           this method to work (otherwise no results will be returned).
 </p>
 
-<p> @return	Returns an instance of <a href="../../utility/awesomium/awe_history_query_result.html"><code class="prettyprint lang-d">awe_history_query_result</code></a> containing the results
+<p> @return  Returns an instance of <a href="../../utility/awesomium/awe_history_query_result.html"><code class="prettyprint lang-d">awe_history_query_result</code></a> containing the results
           of the query. You must call <a href="../../utility/awesomium/awe_history_query_result_destroy.html"><code class="prettyprint lang-d">awe_history_query_result_destroy</code></a> once
           you are finished using the instance.
 </p>
