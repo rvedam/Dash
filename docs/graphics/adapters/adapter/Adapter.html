@@ -143,6 +143,9 @@
 								<a href="../../../utility/awesomium.html" class=" module">awesomium</a>
 							</li>
 							<li>
+								<a href="../../../utility/concurrency.html" class=" module">concurrency</a>
+							</li>
+							<li>
 								<a href="../../../utility/config.html" class=" module">config</a>
 							</li>
 							<li>
@@ -224,10 +227,34 @@
 					</tr>
 					<tr>
 						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.deferredFrameBuffer.html" class="public property"><code>deferredFrameBuffer</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.depthRenderTexture.html" class="public property"><code>depthRenderTexture</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.deviceContext.html" class="public property"><code>deviceContext</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
 						<td><code class="prettyprint lang-d">void*</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.diffuseRenderTexture.html" class="public property"><code>diffuseRenderTexture</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -241,6 +268,14 @@
 					<tr>
 						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.height.html" class="public property"><code>height</code></a>
+							<span class="tableEntryAnnotation">[get]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.normalRenderTexture.html" class="public property"><code>normalRenderTexture</code></a>
 							<span class="tableEntryAnnotation">[get]</span>
 						</td>
 						<td><code class="prettyprint lang-d">uint</code></td>
@@ -296,10 +331,34 @@
 					</tr>
 					<tr>
 						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.deferredFrameBuffer.html" class="protected property"><code>deferredFrameBuffer</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.depthRenderTexture.html" class="protected property"><code>depthRenderTexture</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.deviceContext.html" class="protected property"><code>deviceContext</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
 						<td><code class="prettyprint lang-d">void*</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.diffuseRenderTexture.html" class="protected property"><code>diffuseRenderTexture</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -313,6 +372,14 @@
 					<tr>
 						<td>
 							<a href="../../../graphics/adapters/adapter/Adapter.height.html" class="protected property"><code>height</code></a>
+							<span class="tableEntryAnnotation">[set]</span>
+						</td>
+						<td><code class="prettyprint lang-d">uint</code></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../../graphics/adapters/adapter/Adapter.normalRenderTexture.html" class="protected property"><code>normalRenderTexture</code></a>
 							<span class="tableEntryAnnotation">[set]</span>
 						</td>
 						<td><code class="prettyprint lang-d">uint</code></td>
@@ -382,7 +449,7 @@
 								<code>beginDraw</code>
 							</a>
 						</td>
-						<td> sets up the rendering pipeline for the geometry pass
+						<td> Sets up the render pipeline.
 </td>
 					</tr>
 					<tr>
@@ -399,8 +466,8 @@
 								<code>endDraw</code>
 							</a>
 						</td>
-						<td> called after all desired objects are drawn
- handles lighting and post processing
+						<td> Called after all desired objects are drawn.
+ Handles lighting and post processing.
 </td>
 					</tr>
 					<tr>

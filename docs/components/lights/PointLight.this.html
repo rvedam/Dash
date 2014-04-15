@@ -143,6 +143,9 @@
 								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
 							</li>
 							<li>
+								<a href="../../utility/concurrency.html" class=" module">concurrency</a>
+							</li>
+							<li>
 								<a href="../../utility/config.html" class=" module">config</a>
 							</li>
 							<li>
@@ -199,8 +202,9 @@
 				<h2>Prototype</h2>
 				<pre class="code prettyprint lang-d prototype">
 this(
-&nbsp;&nbsp;gl3n.linalg.Vector!(float,3) color,
-&nbsp;&nbsp;float radius
+&nbsp;&nbsp;shared(gl3n.linalg.Vector!(float,3)) color,
+&nbsp;&nbsp;float radius,
+&nbsp;&nbsp;float falloffRate
 ) shared;</pre>
 			</section>
 
