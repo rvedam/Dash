@@ -55,9 +55,6 @@
 								<a href="../../core/gameobject.html" class=" module">gameobject</a>
 							</li>
 							<li>
-								<a href="../../core/gameobjectcollection.html" class=" module">gameobjectcollection</a>
-							</li>
-							<li>
 								<a href="../../core/prefabs.html" class=" module">prefabs</a>
 							</li>
 							<li>
@@ -161,6 +158,9 @@
 								<a href="../../utility/string.html" class=" module">string</a>
 							</li>
 							<li>
+								<a href="../../utility/tasks.html" class=" module">tasks</a>
+							</li>
+							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -196,13 +196,40 @@
 		</nav>
 		<div id="main-contents">
 			<h1>Function constructAmbientLight</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
-			<p></p>
+			<p> TODO
+</p>
+<section>
+</section>
 
 			<section>
-				<h2>Prototype</h2>
+				<h2>Prototypes</h2>
 				<pre class="code prettyprint lang-d prototype">
+shared(gl3n.linalg.Vector!(float,2)) constructVector2(
+&nbsp;&nbsp;ref dyaml.node.Node node
+);
+
+shared(gl3n.linalg.Vector!(float,3)) constructVector3(
+&nbsp;&nbsp;ref dyaml.node.Node node
+);
+
+shared(gl3n.linalg.Quaternion!(float)) constructQuaternion(
+&nbsp;&nbsp;ref dyaml.node.Node node
+);
+
 <a href="../../components/lights/Light.html">Light</a> constructAmbientLight(
 &nbsp;&nbsp;ref dyaml.node.Node node
+);
+
+<a href="../../components/lights/Light.html">Light</a> constructDirectionalLight(
+&nbsp;&nbsp;ref dyaml.node.Node node
+);
+
+<a href="../../components/lights/Light.html">Light</a> constructPointLight(
+&nbsp;&nbsp;ref dyaml.node.Node node
+);
+
+T constructConv(T)(
+&nbsp;&nbsp;ref <a href="../../components/assetanimation/AssetAnimation.Node.html">AssetAnimation.Node</a> node
 );</pre>
 			</section>
 

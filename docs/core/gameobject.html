@@ -55,9 +55,6 @@
 								<a href="../core/gameobject.html" class="selected module">gameobject</a>
 							</li>
 							<li>
-								<a href="../core/gameobjectcollection.html" class=" module">gameobjectcollection</a>
-							</li>
-							<li>
 								<a href="../core/prefabs.html" class=" module">prefabs</a>
 							</li>
 							<li>
@@ -161,6 +158,9 @@
 								<a href="../utility/string.html" class=" module">string</a>
 							</li>
 							<li>
+								<a href="../utility/tasks.html" class=" module">tasks</a>
+							</li>
+							<li>
 								<a href="../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -234,7 +234,11 @@
 								<code>Transform</code>
 							</a>
 						</td>
-						<td></td>
+						<td> Handles 3D Transformations for an object.
+ Stores <a href="../core/gameobject/Transform.position.html"><code class="prettyprint lang-d">position</code></a>, <a href="../core/gameobject/Transform.rotation.html"><code class="prettyprint lang-d">rotation</code></a>, and <a href="../core/gameobject/Transform.scale.html"><code class="prettyprint lang-d">scale</code></a>
+ and can generate a World <a href="../core/gameobject/Transform.matrix.html"><code class="prettyprint lang-d">matrix</code></a>, <a href="../core/gameobject/Transform.worldPosition.html"><code class="prettyprint lang-d">worldPosition</code></a>/Rotation (based on parents' transforms)
+ as well as <a href="../core/gameobject/Transform.forward.html"><code class="prettyprint lang-d">forward</code></a>, <a href="../core/gameobject/Transform.up.html"><code class="prettyprint lang-d">up</code></a>, and <a href="../core/gameobject/Transform.right.html"><code class="prettyprint lang-d">right</code></a> axes based on <a href="../core/gameobject/Transform.rotation.html"><code class="prettyprint lang-d">rotation</code></a>
+</td>
 					</tr>
 				</table>
 			</section>

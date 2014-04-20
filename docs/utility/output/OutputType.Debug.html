@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Method GameObjectCollection.loadObjects</title>
+		<title>Field OutputType.Debug</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -45,7 +45,7 @@
 							</li>
 						</ul>
 							</li>
-							<li class=" tree-view">
+							<li class="collapsed tree-view">
 								<a href="#" class="package">core</a>
 						<ul class="tree-view">
 							<li>
@@ -53,9 +53,6 @@
 							</li>
 							<li>
 								<a href="../../core/gameobject.html" class=" module">gameobject</a>
-							</li>
-							<li>
-								<a href="../../core/gameobjectcollection.html" class="selected module">gameobjectcollection</a>
 							</li>
 							<li>
 								<a href="../../core/prefabs.html" class=" module">prefabs</a>
@@ -136,7 +133,7 @@
 							</li>
 						</ul>
 							</li>
-							<li class="collapsed tree-view">
+							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
 							<li>
@@ -155,10 +152,13 @@
 								<a href="../../utility/input.html" class=" module">input</a>
 							</li>
 							<li>
-								<a href="../../utility/output.html" class=" module">output</a>
+								<a href="../../utility/output.html" class="selected module">output</a>
 							</li>
 							<li>
 								<a href="../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
+								<a href="../../utility/tasks.html" class=" module">tasks</a>
 							</li>
 							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
@@ -195,25 +195,21 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Method GameObjectCollection.loadObjects</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
-			<p> Load all <a href="../../core/gameobjectcollection/GameObjectCollection.objects.html"><code class="prettyprint lang-d">objects</code></a> inside the specified folder in FilePath.Objects.
+			<h1>Field OutputType.Debug</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
+			<p> <a href="../../utility/output/OutputType.Info.html"><code class="prettyprint lang-d">Info</code></a> for developers.
 </p>
-<section></section>
 
 			<section>
-				<h2>Prototype</h2>
+				<h2>Declaration</h2>
 				<pre class="code prettyprint lang-d prototype">
-void loadObjects(
-&nbsp;&nbsp;string objectPath
-) shared final;</pre>
-			</section>
-<section><h2>Parameters</h2>
-<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
-<tr><td id="objectPath">objectPath</td><td>            The folder location inside of /Objects to look for <a href="../../core/gameobjectcollection/GameObjectCollection.objects.html"><code class="prettyprint lang-d">objects</code></a> in.
-     </td></tr>
-</table>
-</section>
-
+enum <a href="../../utility/output/OutputType.html">OutputType</a>
+{
+	// ...
+	Debug,
+	// ...
+}</pre>
+			</section><!-- using block ddox.sections in ddox.layout.dt-->
+<!-- Default block ddox.members in ddox.layout.dt-->
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->
 

@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Class GameObjectCollection</title>
+		<title>Method Scene.addChild</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -55,9 +55,6 @@
 								<a href="../../core/gameobject.html" class=" module">gameobject</a>
 							</li>
 							<li>
-								<a href="../../core/gameobjectcollection.html" class="selected module">gameobjectcollection</a>
-							</li>
-							<li>
 								<a href="../../core/prefabs.html" class=" module">prefabs</a>
 							</li>
 							<li>
@@ -67,7 +64,7 @@
 								<a href="../../core/reflection.html" class=" module">reflection</a>
 							</li>
 							<li>
-								<a href="../../core/scene.html" class=" module">scene</a>
+								<a href="../../core/scene.html" class="selected module">scene</a>
 							</li>
 						</ul>
 							</li>
@@ -161,6 +158,9 @@
 								<a href="../../utility/string.html" class=" module">string</a>
 							</li>
 							<li>
+								<a href="../../utility/tasks.html" class=" module">tasks</a>
+							</li>
+							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
 							</li>
 						</ul>
@@ -195,96 +195,25 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Class GameObjectCollection</h1><!-- using block body in layout.dt--><!-- using block ddox.description in ddox.layout.dt-->
-			<p> Manages a collection of GameObjects.
+			<h1>Method Scene.addChild</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
+			<p> Adds object to the children, adds it to the scene graph.
 </p>
-<section>
-</section>
+<section></section>
 
 			<section>
-				<h2>Inherits from</h2>
-				<ul>
-					<li>
-						<code class="prettyprint lang-d"><code class="prettyprint lang-d">Object</code></code>
- (base class)
-					</li>
-				</ul>
-			</section><!-- using block ddox.sections in ddox.layout.dt-->
-<!-- using block ddox.members in ddox.layout.dt-->
-			<section>
-				<h2>Fields</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobjectcollection/GameObjectCollection.objects.html" class="public"><code>objects</code></a>
-						</td>
-						<td><code class="prettyprint lang-d">shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>[string])</code></td>
-						<td> The AA of game <code class="prettyprint lang-d">objects</code> managed.
-</td>
-					</tr>
-				</table>
+				<h2>Prototype</h2>
+				<pre class="code prettyprint lang-d prototype">
+void addChild(
+&nbsp;&nbsp;shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>) newChild
+) shared final;</pre>
 			</section>
-			<section>
-				<h2>Methods</h2>
-				<table>
-					<col class="caption"/>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobjectcollection/GameObjectCollection.apply.html" class="public">
-								<code>apply</code>
-							</a>
-						</td>
-						<td> Call the given function on each game object.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobjectcollection/GameObjectCollection.clearObjects.html" class="public">
-								<code>clearObjects</code>
-							</a>
-						</td>
-						<td> Remove all <a href="../../core/gameobjectcollection/GameObjectCollection.objects.html"><code class="prettyprint lang-d">objects</code></a> from the collection.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobjectcollection/GameObjectCollection.draw.html" class="public">
-								<code>draw</code>
-							</a>
-						</td>
-						<td> Draw all game <a href="../../core/gameobjectcollection/GameObjectCollection.objects.html"><code class="prettyprint lang-d">objects</code></a>.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobjectcollection/GameObjectCollection.loadObjects.html" class="public">
-								<code>loadObjects</code>
-							</a>
-						</td>
-						<td> Load all <a href="../../core/gameobjectcollection/GameObjectCollection.objects.html"><code class="prettyprint lang-d">objects</code></a> inside the specified folder in FilePath.Objects.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="../../core/gameobjectcollection/GameObjectCollection.update.html" class="public">
-								<code>update</code>
-							</a>
-						</td>
-						<td> Update all game <a href="../../core/gameobjectcollection/GameObjectCollection.objects.html"><code class="prettyprint lang-d">objects</code></a>.
-</td>
-					</tr>
-				</table>
-			</section>
+<section><h2>Parameters</h2>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="newChild">newChild</td><td>            The object to add.
+     </td></tr>
+</table>
+</section>
+
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->
 

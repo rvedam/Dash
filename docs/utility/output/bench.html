@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Method DGame.scheduleTask</title>
+		<title>Function bench</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -45,17 +45,14 @@
 							</li>
 						</ul>
 							</li>
-							<li class=" tree-view">
+							<li class="collapsed tree-view">
 								<a href="#" class="package">core</a>
 						<ul class="tree-view">
 							<li>
-								<a href="../../core/dgame.html" class="selected module">dgame</a>
+								<a href="../../core/dgame.html" class=" module">dgame</a>
 							</li>
 							<li>
 								<a href="../../core/gameobject.html" class=" module">gameobject</a>
-							</li>
-							<li>
-								<a href="../../core/gameobjectcollection.html" class=" module">gameobjectcollection</a>
 							</li>
 							<li>
 								<a href="../../core/prefabs.html" class=" module">prefabs</a>
@@ -136,7 +133,7 @@
 							</li>
 						</ul>
 							</li>
-							<li class="collapsed tree-view">
+							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
 							<li>
@@ -155,10 +152,13 @@
 								<a href="../../utility/input.html" class=" module">input</a>
 							</li>
 							<li>
-								<a href="../../utility/output.html" class=" module">output</a>
+								<a href="../../utility/output.html" class="selected module">output</a>
 							</li>
 							<li>
 								<a href="../../utility/string.html" class=" module">string</a>
+							</li>
+							<li>
+								<a href="../../utility/tasks.html" class=" module">tasks</a>
 							</li>
 							<li>
 								<a href="../../utility/time.html" class=" module">time</a>
@@ -195,22 +195,23 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Method DGame.scheduleTask</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
-			<p> Schedule a task to be executed until it returns true.
+			<h1>Function bench</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
+			<p> Benchmark the running of a function, and <a href="../../utility/output/log.html"><code class="prettyprint lang-d">log</code></a> the result to the debug buffer.
 </p>
 <section></section>
 
 			<section>
 				<h2>Prototype</h2>
 				<pre class="code prettyprint lang-d prototype">
-void scheduleTask(
-&nbsp;&nbsp;bool delegate() dg
-) shared;</pre>
+void bench(alias func)(
+&nbsp;&nbsp;lazy string name
+);</pre>
 			</section>
 <section><h2>Parameters</h2>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
-<tr><td id="dg">dg</td><td>                The task to execute
-     </td></tr>
+<tr><td id="func">func</td><td>              The function to benchmark</td></tr>
+<tr><td id="name">name</td><td>              The <a href="../../utility/output/bench.html#name"><code class="prettyprint lang-d">name</code></a> to print in the <a href="../../utility/output/log.html"><code class="prettyprint lang-d">log</code></a>
+ </td></tr>
 </table>
 </section>
 
