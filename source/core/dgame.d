@@ -2,7 +2,7 @@
  * Defines the DGame class, the base class for all game logic.
  */
 module core.dgame;
-import core, components, graphics, utility, utility.awesomium;
+import core, components, graphics, utility;
 
 /**
  * The states the game can be in.

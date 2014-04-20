@@ -2,7 +2,7 @@ language: dlang
 install:
  - sudo wget http://netcologne.dl.sourceforge.net/project/d-apt/files/d-apt.list -O /etc/apt/sources.list.d/d-apt.list
  - sudo apt-get update
- - sudo apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring 
+ - sudo apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring
  - sudo apt-get update
  - sudo apt-get install dub
  - sudo apt-get install dmd-bin
@@ -13,7 +13,6 @@ install:
  - sudo git clone https://github.com/Circular-Studios/Sample-Dash-Game.git
  - cd Sample-Dash-Game/
  - git branch -r | grep -q $TRAVIS_BRANCH && sudo git checkout $TRAVIS_BRANCH || (exit 0)
- - sudo cp libawesomium-1.6.5.so /usr/lib/libawesomium-1.6.5.so.0
 script: sudo dub test -q
 
 # For pushing results to gitter.im
