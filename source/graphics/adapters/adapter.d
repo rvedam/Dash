@@ -215,7 +215,7 @@ public:
         */
         void geometryPass()
         {
-            void updateMatricies( shared GameObject current )
+            void updateMatricies( shared GameObject* current )
             {
                 current.transform.updateMatrix();
                 foreach( child; current.children )

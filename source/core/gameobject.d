@@ -45,7 +45,7 @@ shared struct ObjectStateFlags
 /**
  * Manages all components and transform in the world. Can be overridden.
  */
-shared class GameObject
+shared struct GameObject
 {
 private:
     Transform _transform;
@@ -54,14 +54,24 @@ private:
     Animation _animation;
     Light _light;
     Camera _camera;
-    GameObject _parent;
-    GameObject[] _children;
+    GameObject* _parent;
+    GameObject*[] _children;
     IComponent[TypeInfo] componentList;
     string _name;
     ObjectStateFlags* _stateFlags;
     bool canChangeName;
     Behaviors _behaviors;
     static uint nextId = 1;
+
+    /**
+     * Initialize object with ID. Only to be called from create.
+     */
+    this( uint newId )
+    {
+        id = newId;
+        _transform = shared Transform( &this );
+        _behaviors = shared Behaviors( &this );
+    }
 
 package:
     Scene scene;
@@ -104,9 +114,9 @@ public:
      * Returns:
      *  A new game object with components and info pulled from yaml.
      */
-    static shared(GameObject) createFromYaml( Node yamlObj )
+    static shared(GameObject*) createFromYaml( Node yamlObj )
     {
-        shared GameObject obj;
+        shared GameObject* obj;
         bool foundClassName;
         string prop, className;
         Node innerNode;
@@ -117,7 +127,7 @@ public:
         }
         else
         {
-            obj = new shared GameObject;
+            obj = GameObject.create();
         }
 
         // Set object name
@@ -202,20 +212,23 @@ public:
     /**
      * Creates basic GameObject with transform and connection to transform's emitter.
      */
-    this()
+    static shared(GameObject*) create()
     {
-        _transform = shared Transform( this );
-        _behaviors = shared Behaviors( this );
+        shared GameObject* obj = new shared GameObject( nextId++ );
 
-        // Create default material
-        material = new shared Material();
-        id = nextId++;
+        with( obj )
+        {
+            // Create default material
+            material = new shared Material();
 
-        stateFlags = new ObjectStateFlags;
-        stateFlags.resumeAll();
+            stateFlags = new ObjectStateFlags;
+            stateFlags.resumeAll();
 
-        name = typeid(this).name.split( '.' )[ $-1 ] ~ id.to!string;
-        canChangeName = true;
+            name = "Object_" ~ id.to!string;
+            canChangeName = true; 
+        }
+
+        return obj;
     }
 
     /**
@@ -288,26 +301,26 @@ public:
      * Params:
      *  newChild =            The object to add.
      */
-    final void addChild( shared GameObject newChild )
+    final void addChild( shared GameObject* newChild )
     {
         // Nothing to see here.
-        if( cast()newChild.parent == cast()this )
+        if( newChild.parent == &this )
             return;
         // Remove from current parent
         else if( newChild.parent )
             newChild.parent.removeChild( newChild );
 
         _children ~= newChild;
-        newChild.parent = this;
+        newChild.parent = &this;
         newChild.canChangeName = false;
 
         // Get root object
-        shared GameObject par;
-        for( par = this; par.parent; par = par.parent ) { }
+        shared GameObject* par;
+        for( par = &this; par.parent; par = par.parent ) { }
 
-        shared GameObject[] objectChildren;
+        shared GameObject*[] objectChildren;
         {
-            shared GameObject[] objs;
+            shared GameObject*[] objs;
             objs ~= newChild;
 
             while( objs.length )
@@ -339,7 +352,7 @@ public:
      * Params:
      *  oldChild =            The object to remove.
      */
-    final void removeChild( shared GameObject oldChild )
+    final void removeChild( shared GameObject* oldChild )
     {
         children = children.remove( oldChild );
 
@@ -357,7 +370,7 @@ public:
 private shared struct Transform
 {
 private:
-    GameObject _owner;
+    GameObject* _owner;
     vec3 _prevPos;
     quat _prevRot;
     vec3 _prevScale;
@@ -369,7 +382,7 @@ private:
      * Params:
      *  obj =            The object the transform belongs to.
      */
-    this( shared GameObject obj )
+    this( shared GameObject* obj )
     {
         owner = obj;
         position = vec3(0,0,0);

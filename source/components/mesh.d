@@ -294,8 +294,29 @@ public:
         glDeleteBuffers( 1, cast(uint*)&_glVertexBuffer );
         glDeleteBuffers( 1, cast(uint*)&_glVertexArray );
     }
-}
 
+    /**
+     * Allow Meshes to be added as components.
+     */
+    static this()
+    {
+        import yaml;
+        IComponent.initializers[ "Mesh" ] = ( Node yml, shared GameObject* obj )
+        {
+            obj.mesh = Assets.get!Mesh( yml.get!string );
+            
+            // If the mesh has animation also add animation component
+            if( obj.mesh.animated )
+            {
+                auto anim = new shared Animation( Assets.get!AssetAnimation( yml.get!string ) );
+                obj.addComponent( anim );
+                obj.animation = anim;
+            }
+
+            return obj.mesh;
+        };
+    }
+}
 
 /**
  * Helper function that calculates a modifier for the reconstructed bitangent based on regenerating them
@@ -315,23 +336,4 @@ private float calcTangentHandedness( aiVector3D nor, aiVector3D tan, aiVector3D 
     t = (t - n * dot( n, t )).normalized();
 
     return (dot(cross(n,t),b) > 0.0f) ? -1.0f : 1.0f;
-}
-
-static this()
-{
-    import yaml;
-    IComponent.initializers[ "Mesh" ] = ( Node yml, shared GameObject obj )
-    {
-        obj.mesh = Assets.get!Mesh( yml.get!string );
-        
-        // If the mesh has animation also add animation component
-        if( obj.mesh.animated )
-        {
-            auto anim = new shared Animation( Assets.get!AssetAnimation( yml.get!string ) );
-            obj.addComponent( anim );
-            obj.animation = anim;
-        }
-
-        return obj.mesh;
-    };
 }

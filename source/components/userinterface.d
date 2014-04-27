@@ -93,7 +93,7 @@ private:
     ubyte[] glBuffer;
 
 public:
-    this( uint w, uint h, string filePath, shared GameObject owner, bool localFilePath = true )
+    this( uint w, uint h, string filePath, shared GameObject* owner, bool localFilePath = true )
     {
         _width = w;
         _height = h;

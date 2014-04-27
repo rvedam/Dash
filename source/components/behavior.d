@@ -13,7 +13,7 @@ import std.algorithm, std.array, std.traits;
 private abstract shared class ABehavior
 {
     /// The object the behavior belongs to.
-    private GameObject _owner;
+    private GameObject* _owner;
     /// Function called by Behaviors to init the object.
     /// Should not be touched by anything outside this module.
     protected void initializeBehavior( Object param ) {  }
@@ -81,7 +81,7 @@ shared struct Behaviors
 {
 private:
     ABehavior[] behaviors;
-    shared GameObject _owner;
+    shared GameObject* _owner;
 
 public:
     /**
@@ -90,7 +90,7 @@ public:
      * Params:
      *  owner =         The owner of this behavior set.
      */
-    this( shared GameObject owner )
+    this( shared GameObject* owner )
     {
         _owner = owner;
     }

@@ -56,6 +56,18 @@ public:
 
         return obj;
     }
+
+    /**
+     * Allow Material to be added as a component.
+     */
+    static this()
+    {
+        IComponent.initializers[ "Material" ] = ( Node yml, shared GameObject* obj )
+        {
+            obj.material = Assets.get!Material( yml.get!string );
+            return null;
+        };
+    }
 }
 
 /**
@@ -156,13 +168,4 @@ public:
         def = new shared Texture( [0, 0, 0, 255] );
 
     return def;
-}
-
-static this()
-{
-    IComponent.initializers[ "Material" ] = ( Node yml, shared GameObject obj )
-    {
-        obj.material = Assets.get!Material( yml.get!string );
-        return null;
-    };
 }

@@ -70,7 +70,7 @@ public:
      * Returns:
      *  The new GameObject from the Prefab.
      */
-    final shared(GameObject) createInstance()
+    final shared(GameObject*) createInstance()
     {
         return GameObject.createFromYaml( yaml );
     }

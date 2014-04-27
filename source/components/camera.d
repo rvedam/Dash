@@ -234,7 +234,7 @@ private:
 static this()
 {
     import yaml;
-    IComponent.initializers[ "Camera" ] = ( Node yml, shared GameObject obj )
+    IComponent.initializers[ "Camera" ] = ( Node yml, shared GameObject* obj )
     {
         obj.camera = new shared Camera;
         obj.camera.owner = obj;

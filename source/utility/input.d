@@ -392,7 +392,7 @@ public:
      *
      * Returns:     The GameObject located at the current mouse Position
      */
-    final @property shared(GameObject) mouseObject()
+    final @property shared(GameObject*) mouseObject()
     {
         if( !DGame.instance.activeScene )
         {

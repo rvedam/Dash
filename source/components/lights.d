@@ -26,6 +26,21 @@ public:
     
     override void update() { }
     override void shutdown() { }
+
+    /**
+     * Allow lights to be added as components.
+     */
+    static this()
+    {
+        import yaml;
+        IComponent.initializers[ "Light" ] = ( Node yml, shared GameObject* obj )
+        {
+            obj.light = cast(shared)yml.get!Light;
+            obj.light.owner = obj;
+
+            return obj.light;
+        };
+    }
 }
 
 /**
@@ -115,16 +130,4 @@ public:
     {
         super( color );
     }
-}
-
-static this()
-{
-    import yaml;
-    IComponent.initializers[ "Light" ] = ( Node yml, shared GameObject obj )
-    {
-        obj.light = cast(shared)yml.get!Light;
-        obj.light.owner = obj;
-
-        return obj.light;
-    };
 }
