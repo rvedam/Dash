@@ -61,10 +61,16 @@ private:
     ObjectStateFlags* _stateFlags;
     bool canChangeName;
     Behaviors _behaviors;
+
+package:
+    Scene scene;
     static uint nextId = 1;
 
     /**
-     * Initialize object with ID. Only to be called from create.
+     * Initialize object with ID. Only to be called from create or by scene.
+     *
+     * Params:
+     *  newId =         The id to assign to the object.
      */
     this( uint newId )
     {
@@ -73,10 +79,10 @@ private:
         _behaviors = shared Behaviors( &this );
     }
 
-package:
-    Scene scene;
-
 public:
+    @disable this();
+    @disable this(this);
+
     /// The current transform of the object.
     mixin( RefGetter!( _transform, AccessModifier.Public ) );
     /// The Material belonging to the object.
@@ -97,10 +103,10 @@ public:
     mixin( Property!( _stateFlags, AccessModifier.Public ) );
     /// The name of the object.
     mixin( Getter!_name );
-    /// The scripts this object owns.
-    mixin( RefGetter!_behaviors );
     /// ditto
     mixin( ConditionalSetter!( _name, q{canChangeName}, AccessModifier.Public ) );
+    /// The scripts this object owns.
+    mixin( RefGetter!_behaviors );
     /// The ID of the object
     immutable uint id;
 
