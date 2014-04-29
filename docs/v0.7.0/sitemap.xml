@@ -65,6 +65,8 @@
 <url><loc>http://127.0.0.1/components/behavior/Behavior.html</loc></url>
 <url><loc>http://127.0.0.1/components/behavior/Behaviors.html</loc></url>
 <url><loc>http://127.0.0.1/components/behavior/Behaviors.createBehavior.html</loc></url>
+<url><loc>http://127.0.0.1/components/behavior/Behaviors.createBehavior.html</loc></url>
+<url><loc>http://127.0.0.1/components/behavior/Behaviors.get.html</loc></url>
 <url><loc>http://127.0.0.1/components/behavior/Behaviors.onDraw.html</loc></url>
 <url><loc>http://127.0.0.1/components/behavior/Behaviors.onInitialize.html</loc></url>
 <url><loc>http://127.0.0.1/components/behavior/Behaviors.onShutdown.html</loc></url>
@@ -273,6 +275,7 @@
 <url><loc>http://127.0.0.1/core/gameobject/GameObject.children.html</loc></url>
 <url><loc>http://127.0.0.1/core/gameobject/GameObject.children.html</loc></url>
 <url><loc>http://127.0.0.1/core/gameobject/GameObject.createFromYaml.html</loc></url>
+<url><loc>http://127.0.0.1/core/gameobject/GameObject.createWithBehavior.html</loc></url>
 <url><loc>http://127.0.0.1/core/gameobject/GameObject.draw.html</loc></url>
 <url><loc>http://127.0.0.1/core/gameobject/GameObject.getComponent.html</loc></url>
 <url><loc>http://127.0.0.1/core/gameobject/GameObject.id.html</loc></url>

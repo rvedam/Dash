@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/><!-- using block title in layout.dt--><!-- using block ddox.defs in ddox.layout.dt--><!-- using block ddox.title in ddox.layout.dt-->
-		<title>Method GameObject.mesh</title>
+		<title>Method Input.isKeyDown</title>
 		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
 		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
@@ -45,14 +45,14 @@
 							</li>
 						</ul>
 							</li>
-							<li class=" tree-view">
+							<li class="collapsed tree-view">
 								<a href="#" class="package">core</a>
 						<ul class="tree-view">
 							<li>
 								<a href="../../core/dgame.html" class=" module">dgame</a>
 							</li>
 							<li>
-								<a href="../../core/gameobject.html" class="selected module">gameobject</a>
+								<a href="../../core/gameobject.html" class=" module">gameobject</a>
 							</li>
 							<li>
 								<a href="../../core/prefabs.html" class=" module">prefabs</a>
@@ -133,12 +133,9 @@
 							</li>
 						</ul>
 							</li>
-							<li class="collapsed tree-view">
+							<li class=" tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
-							<li>
-								<a href="../../utility/array.html" class=" module">array</a>
-							</li>
 							<li>
 								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
 							</li>
@@ -152,7 +149,7 @@
 								<a href="../../utility/filepath.html" class=" module">filepath</a>
 							</li>
 							<li>
-								<a href="../../utility/input.html" class=" module">input</a>
+								<a href="../../utility/input.html" class="selected module">input</a>
 							</li>
 							<li>
 								<a href="../../utility/output.html" class=" module">output</a>
@@ -198,26 +195,26 @@
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Method GameObject.mesh</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
-			<h2>Overload group</h2>
-			<p></p>
+			<h1>Method Input.isKeyDown</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
+			<p> Check if a given key is down.
+</p>
+<section></section>
 
 			<section>
-				<h3>Prototype</h3>
+				<h2>Prototype</h2>
 				<pre class="code prettyprint lang-d prototype">
-void mesh(
-&nbsp;&nbsp;shared(<a href="../../components/mesh/Mesh.html">Mesh</a>) newVal
-) pure nothrow @property @safe shared final;</pre>
+bool isKeyDown(
+&nbsp;&nbsp;uint keyCode,
+&nbsp;&nbsp;bool checkPrevious
+) static final;</pre>
 			</section>
-
-			<h2>Overload group</h2>
-			<p></p>
-
-			<section>
-				<h3>Prototype</h3>
-				<pre class="code prettyprint lang-d prototype">
-shared(<a href="../../components/mesh/Mesh.html">Mesh</a>) mesh() pure nothrow @property @safe shared auto final;</pre>
-			</section>
+<section><h2>Parameters</h2>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="keyCode">keyCode</td><td>       The code of the key to check.</td></tr>
+<tr><td id="checkPrevious">checkPrevious</td><td> Whether or not to make sure the key was down last frame.
+     </td></tr>
+</table>
+</section>
 
 			<section>
 				<h2>Authors</h2><!-- using block ddox.authors in ddox.layout.dt-->

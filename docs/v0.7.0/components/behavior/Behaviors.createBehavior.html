@@ -199,21 +199,43 @@
 		</nav>
 		<div id="main-contents">
 			<h1>Method Behaviors.createBehavior</h1><!-- using block body in layout.dt--><!-- Default block ddox.description in ddox.layout.dt--><!-- Default block ddox.sections in ddox.layout.dt--><!-- using block ddox.members in ddox.layout.dt-->
+			<h2>Overload group</h2>
 			<p> Adds a new behavior to the collection.
 </p>
 <section></section>
 
 			<section>
-				<h2>Prototype</h2>
+				<h3>Prototype</h3>
 				<pre class="code prettyprint lang-d prototype">
-void createBehavior(
+shared(components.behavior.ABehavior) createBehavior(
 &nbsp;&nbsp;string className,
 &nbsp;&nbsp;dyaml.node.Node fields
 ) shared;</pre>
 			</section>
-<section><h2>Parameters</h2>
+<section><h3>Parameters</h3>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
-<tr><td id="newBehavior">newBehavior</td><td>   The behavior to add to the object.
+<tr><td id="className">className</td><td>     The behavior to add to the object.</td></tr>
+<tr><td id="fields">fields</td><td>        Fields to convert give to behavior
+     </td></tr>
+</table>
+</section>
+
+			<h2>Overload group</h2>
+			<p> Adds a new behavior to the collection.
+</p>
+<section></section>
+
+			<section>
+				<h3>Prototype</h3>
+				<pre class="code prettyprint lang-d prototype">
+shared(T) createBehavior(T)(
+&nbsp;&nbsp;Node fields
+);</pre>
+			</section>
+<section><h3>Parameters</h3>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="T">T</td><td>             The behavior to add to the object.</td></tr>
+<tr><td id="fields">fields</td><td>        Fields to convert give to behavior
      </td></tr>
 </table>
 </section>
