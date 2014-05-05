@@ -110,6 +110,9 @@
 								<a href="../../graphics/shaders/glsl/pointlight.html" class=" module">pointlight</a>
 							</li>
 							<li>
+								<a href="../../graphics/shaders/glsl/shadowmap.html" class=" module">shadowmap</a>
+							</li>
+							<li>
 								<a href="../../graphics/shaders/glsl/userinterface.html" class=" module">userinterface</a>
 							</li>
 						</ul>
@@ -136,9 +139,6 @@
 							<li class="collapsed tree-view">
 								<a href="#" class="package">utility</a>
 						<ul class="tree-view">
-							<li>
-								<a href="../../utility/array.html" class=" module">array</a>
-							</li>
 							<li>
 								<a href="../../utility/awesomium.html" class=" module">awesomium</a>
 							</li>
@@ -210,7 +210,7 @@
 interface <a href="../../components/icomponent/IComponent.html">IComponent</a>
 {
 	// ...
-	<code class="prettyprint lang-d">shared(<a href="../../components/icomponent/IComponent.html">IComponent</a>) function(dyaml.node.Node, shared(<a href="../../core/gameobject/GameObject.html">GameObject</a>))</code> initializers;
+	<code class="prettyprint lang-d"><a href="../../components/icomponent/IComponent.html">IComponent</a> function(dyaml.node.Node, <a href="../../core/gameobject/GameObject.html">GameObject</a>)</code> initializers;
 	// ...
 }</pre>
 			</section><!-- using block ddox.sections in ddox.layout.dt-->
